@@ -9,12 +9,14 @@
   }
   
   .menu a {
-    background-color: #2B061E;
+    /* This is the background color left it at the #e5e5e5 */
+    background-color: #e5e5e5;
     padding: 8px;
     margin-top: 7px;
     display: block;
     width: 100%;
-    color: #e5e5e5;
+    /* This is the background color leave it at the #2b061e */
+    color: #2B061E;
   }
   
   .main {
