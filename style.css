@@ -14,7 +14,7 @@
     margin-top: 7px;
     display: block;
     width: 100%;
-    color: #e5e5e5;
+    color: #2B061E;
   }
   
   .main {
@@ -24,7 +24,7 @@
   }
   
   .right {
-    background-color: #2B061E;
+    background-color: #e5e5e5;
     float: left;
     width: 20%;
     padding: 15px;
