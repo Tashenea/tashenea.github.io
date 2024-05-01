@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!-- class HTML template: last modified 2024-02-30 -->
+
+<!--
+    by: Toni
+    last modified: 2024-04-30
+
+    you can run this using the URL: https://tashenea.github.io/
+
+-->
+<html>
+<head>
+    <meta name = "viewport" content="width=device-width, initial-scael=1.0">
+    <title> Calculator Testing 2 </title>
+    <!-- This "Links this html file to the css file" -->
+    <link rel=" stylesheet" href="calculator_2.css">
+
+</head>
+
+<!-- Body -->
+<body>
+<!-- The Container basically the background-->    
+<div class="container">
+    <!-- The calculator portion found inside the container-->
+    <div class="calculator">
+        <form>
+            <!-- First sub section being the display screen -->
+            <div class="display">
+                <input type="text" name="display">
+            </div>
+            <!-- Contains most of the operators and assigns a class to edit format in css file-->
+            <div>
+                <input type="button" value="AC" onclick="display.value = '' " class="operator">
+                <input type="button" value="DE" onclick="display.value = display.value.toString().slice(0,-1) " class="operator">
+                <input type="button" value="." onclick="display.value += '.' " class="operator">
+                <input type="button" value="/" onclick="display.value += '/' " class="operator">
+            </div>
+            <!-- contains numbers and displays them as well as the multiplication operator-->
+            <div>
+                <input type="button" value="7" onclick="display.value += '7' ">
+                <input type="button" value="8" onclick="display.value += '8' ">
+                <input type="button" value="9" onclick="display.value += '9' ">
+                <input type="button" value="*" onclick="display.value += '*' " class="operator">
+            </div>
+            <!-- contains numbers and displays them as well as the subtraction operator-->
+            <div>
+                <input type="button" value="4" onclick="display.value += '4' ">
+                <input type="button" value="5" onclick="display.value += '5' ">
+                <input type="button" value="6" onclick="display.value += '6' ">
+                <input type="button" value="-" onclick="display.value += '-' " class="operator">
+            </div>
+            <!-- contains numbers and displays them as well as the addition operator-->
+            <div>
+                <input type="button" value="1" onclick="display.value += '1' ">
+                <input type="button" value="2" onclick="display.value += '2' ">
+                <input type="button" value="3" onclick="display.value += '3' ">
+                <input type="button" value="+" onclick="display.value += '+' " class="operator">
+            </div>
+            <!-- contains numbers and displays them as well as the equals operator-->
+            <div>
+                <input type="button" value="00" onclick="display.value += '00' ">
+                <input type="button" value="0" onclick="display.value += '0' ">
+                <!-- calls for the evaluate built into html where it solves whats on the display screen -->
+                <input type="button" value="=" onclick="display.value = eval(display.value)" class="equal operator"> 
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>
