@@ -45,9 +45,16 @@
     margin-left: auto; 
     margin-right: auto; 
 } 
-  
+#result{
+  background-color: #e5e5e5;
+  height:auto;
+  width: auto;
+  font-size: auto;
+  margin: auto;
+  border: solid blue;
+}
 button { 
-    width: 100%; 
+    width: auto; 
     padding: 20px 40px; 
     background-color: purple; 
     color: white; 
@@ -64,6 +71,20 @@ textarea {
     border: none; 
     border-radius: 5px; 
     border: 2px solid black; 
-} 
+}
+footer{
 
- 
+  background-color:#D183C9;
+  text-align:center;
+  padding:10px;
+}
+.calculator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+}
+button {
+  padding: 10px;
+  margin: 5px;
+}

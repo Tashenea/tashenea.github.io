@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- class HTML template: last modified 2024-02-30 -->
+
+<!--
+    by: Tashenea M. Burns-Young
+    last modified: 2024-05-01
+
+    you can run this using the URL: https://tashenea.github.io/
+
+-->
+<html>
+<head>
+    <meta name = "viewport" content="width=device-width, initial-scael=1.0">
+    <title> Binary Calculator </title>
+    <!-- This "Links this html file to the css file" -->
+     <link rel=" stylesheet" href="style.css"> 
+     <link rel=" stylesheet" href="calculator_2.css"> 
+</head>
+
+<!-- Body -->
+<body>
+    <div class="calculator">
+        <input type="text" id="output" readonly>
+        <button onclick="appendNumber('0')">0</button>
+        <button onclick="appendNumber('1')">1</button>
+        <button onclick="appendNumber('/')">/</button>
+        <button onclick="appendNumber('+')">+</button>
+        <button onclick="appendNumber('-')">-</button>
+        <button onclick="appendNumber('*')">*</button>
+        <button onclick="backspace()"> DEL</button>
+        <button onclick="calculate()">TOTAL</button>
+        <button onclick="clearAll()">CLEAR</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+<footer> © copyright Team Purple</footer>
+<div class="right">
+    <h2> Home Page </h2>
+        <p>This returns back to the <a href="https://tashenea.github.io/"> Home Page</a></p>
+</div>
+</html>
