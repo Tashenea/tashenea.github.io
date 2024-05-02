@@ -20,16 +20,24 @@
 <!-- Body -->
 <body>
     <div class="calculator">
-        <input type="text" id="output" readonly>
-        <button onclick="appendNumber('0')">0</button>
-        <button onclick="appendNumber('1')">1</button>
-        <button onclick="appendNumber('/')">/</button>
-        <button onclick="appendNumber('+')">+</button>
-        <button onclick="appendNumber('-')">-</button>
-        <button onclick="appendNumber('*')">*</button>
-        <button onclick="backspace()"> DEL</button>
-        <button onclick="calculate()">TOTAL</button>
-        <button onclick="clearAll()">CLEAR</button>
+            <div class="display">
+                <input type="text" id="output" readonly>
+            </div>
+            <div>
+                <button onclick="backspace()"> DEL</button>
+                <button onclick="calculate()">TOTAL</button>
+                <button onclick="clearAll()">CLEAR</button>
+            </div>
+            <div>
+                <button onclick="appendNumber('0')">0</button>
+                <button onclick="appendNumber('1')">1</button>
+                <button onclick="appendNumber('/')">/</button>
+            </div>
+            <div>
+                <button onclick="appendNumber('+')">+</button>
+                <button onclick="appendNumber('-')">-</button>
+                <button onclick="appendNumber('*')">*</button>
+            </div>
     </div>
     <script src="script.js"></script>
 </body>
