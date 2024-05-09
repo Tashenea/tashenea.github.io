@@ -24,7 +24,7 @@ function clrAll()
 	screen.value = '';
 }
 
-function DE()
+function CE()
 {
 	screen.value = screen.value.substr(0,screen.value.length-1);
 }
