@@ -36,7 +36,7 @@ body
                 inset -8px -8px 8px #9524dc;
 }
 
-.btns
+.calcBtns
 {
     width: 100%;
     margin-top: 1.7em;
@@ -46,7 +46,7 @@ body
     flex-direction: column;
 }
 
-.btns .row button
+.calcBtns .row button
 {
     width: 95px;
     height: 40px;
