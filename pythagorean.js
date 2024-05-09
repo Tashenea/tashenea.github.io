@@ -25,11 +25,13 @@ function PythagoreanAB(a, b) {
 }
 // Finds the length of one of the legs given the other leg l and the hypotenuse c
 function PythagoreanLC(l, c) {
+    console.log(l + " : " + c);
+    console.log(l >= c);
     if(l <= 0 || c <= 0) {
         return "Invalid input: all inputs must be greater than 0"
-    }
-    else if(l >= c) {
-        return "Invalid input: value of leg must be less than hypotenuse"
+    } else if(l >= c) {
+        console.log("hello");
+        return ("Invalid input: value of leg " + l +  " must be less than hypotenuse " + c);
     }
     
     return Math.sqrt(Math.pow(c, 2) - Math.pow(l, 2));

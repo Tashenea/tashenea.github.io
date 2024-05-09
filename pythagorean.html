@@ -9,8 +9,15 @@
 <html>
 <body>
 <title> Pythagorean Calculator </title>
+
+<style>div {text-align: center;} </style>
+
+<div>
 <h1>Pythagorean Theorem Calculator</h1>
+<p>Calculates the missing side length of a right triangle given the other two side lengths using the Pythagorean Theorem:</p>
 <p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p></p>
+<p> Where a and b are the <em>legs</em> of a right triangle</p>
+<p> and c is the <em>hypotenuse</em> of a right triangle</p>
 
 <select id="side1" onchange = "setSide1(this.value)">
     <option value = "a"> a </option>
@@ -25,8 +32,9 @@
 </select>
 <input type = "text" id = "length2" name = "length2" required maxlength = "20" size = "10"><br>
 <input type= "text" id="output" readonly size = "52">
-<button type = "button" onclick = "Pythagorean(document.getElementById('length1').value, document.getElementById('length2').value);">Calculate</button><br>
+<button type = "button" onclick = "Pythagorean(document.getElementById('length1').value, document.getElementById('length2').value);">Calculate</button><br><br>
 <a href="https://tashenea.github.io/"> Return to Home Page </a>
+</div>
 
 
 
