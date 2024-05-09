@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+    by: Kurtis Heer
+    last modified: 2024-05-08
+
+    you can run this using the URL: https://tashenea.github.io/pythagorean.html
+
+-->
+<html>
+<body>
+<h1>Pythagorean Theorem Calculator</h1>
+<select id="side1" onchange = "setSide1(this.value)">
+    <option value = "a"> a </option>
+    <option value = "b"> b </option>
+    <option value = "c"> c </option>
+</select>
+<input type = "text" id = "length1" name = "length1" required maxlength = "20" size = "10"><br>
+<select id="side2" onchange = "setSide2(this.value)">
+    <option value = "a"> a </option>
+    <option value = "b"> b </option>
+    <option value = "c"> c </option>
+</select>
+<input type = "text" id = "length2" name = "length2" required maxlength = "20" size = "10"><br>
+<input type= "text" id="output" readonly size = "50">
+<button type = "button" onclick = "Pythagorean(document.getElementById('length1').value, document.getElementById('length2').value);">Calculate</button>
+
+
+
+
+
+<script src="pythagorean.js"></script>
+
+</body>
+</html>
