@@ -26,12 +26,19 @@ function clrAll()
 
 function DE()
 {
-	screen.value = screen.value.substr(0,screen.value.lenght-1);
+	screen.value = screen.value.substr(0,screen.value.length-1);
 }
 
 function equalOperator()
 {
-	screen.value = eval(screen.value);
+	try 
+	{
+		screen.value = eval(screen.value);
+	}
+	catch (error)
+	{
+		screen.value = 'Error';
+	}
 }
 
 function sin()
@@ -56,7 +63,7 @@ function pow()
 
 function sqrt()
 {
-	screen.value = Math.sqrt(screen.value,2);
+	screen.value = Math.sqrt(screen.value);
 }
 
 function log()
@@ -72,6 +79,31 @@ function pi()
 function e()
 {
 	screen.value = 2.71828182846;
+}
+
+function cbrt()
+{
+	screen.value = Math.cbrt(screen.value);
+}
+
+function ln()
+{
+	screen.value = Math.ln(screen.value);
+}
+
+function logBase2()
+{
+	screen.value = Math.log2(screen.value);
+}
+
+function inverse()
+{
+	screen.value = 1 / screen.value;
+}
+
+function cube()
+{
+	screen.value = screen.value * screen.value * screen.value;
 }
 
 function fact()
