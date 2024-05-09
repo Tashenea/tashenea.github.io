@@ -40,13 +40,14 @@ function binaryExpressionToDecimalExpression(expression) {
                 for(let i = 0; i < binaryArray.length; i++) {
                 decimalArray[i] = parseInt(binaryArray[i], 2);
             }
+            // create an array of the decimals andd the operators
             let numberAndOpArray = [];
             for(let i = 0; i < opArray.length; i++) {
                 numberAndOpArray[numberAndOpArray.length] = decimalArray[i];
                 numberAndOpArray[numberAndOpArray.length] = opArray[i];
             }
             numberAndOpArray[numberAndOpArray.length] = decimalArray[decimalArray.length - 1];
-
+            // return the decimal expression
             return numberAndOpArray.join("");
     }
 }
