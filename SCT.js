@@ -66,9 +66,9 @@ function sqrt()
 	screen.value = Math.sqrt(screen.value);
 }
 
-function log()
+function logBase10()
 {
-	screen.value = Math.log(screen.value);
+	screen.value = Math.log10(screen.value);
 }
 
 function pi()
@@ -88,7 +88,7 @@ function cbrt()
 
 function ln()
 {
-	screen.value = Math.ln(screen.value);
+	screen.value = Math.log(screen.value); // log base e
 }
 
 function logBase2()
