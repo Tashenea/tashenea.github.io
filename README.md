@@ -19,6 +19,5 @@ As the project evolves, we plan to introduce additional features and functionali
 
 Developed By:
 Tashenea Young
-Marilu Martinez
 Kurtis Heer
 Antonio Gallegos

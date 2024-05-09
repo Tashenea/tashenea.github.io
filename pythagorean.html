@@ -7,10 +7,14 @@
 
 -->
 <html>
-<body>
-<title> Pythagorean Calculator </title>
+    <head> 
+         <!-- This is the style sheet we used to make it pretty and responsive-->
+    <link href="style.css"type="text/css" rel="stylesheet" />
+    <title> Pythagorean Calculator <style>div {text-align: center;} </style></title>
+    <script src="pythagorean.js"></script>
 
-<style>div {text-align: center;} </style>
+    </head>
+<body>
 
 <div>
 <h1>Pythagorean Theorem Calculator</h1>
@@ -32,15 +36,22 @@
 </select>
 <input type = "text" id = "length2" name = "length2" required maxlength = "20" size = "10"><br>
 <input type= "text" id="output" readonly size = "52">
-<button type = "button" onclick = "Pythagorean(document.getElementById('length1').value, document.getElementById('length2').value);">Calculate</button><br><br>
-<a href="https://tashenea.github.io/"> Return to Home Page </a>
+<button type = "button" onclick = "Pythagorean(document.getElementById('length1').value,
+                                               document.getElementById('length2').value);">Calculate</button><br><br>
 </div>
 
 
 
 
 
-<script src="pythagorean.js"></script>
+
 
 </body>
+
+<footer> © copyright Team Purple
+<div class="right">
+    <h2> Home Page </h2>
+        <p>This returns back to the <a href="https://tashenea.github.io/"> Home Page</a></p>
+</div>
+</footer>
 </html>
