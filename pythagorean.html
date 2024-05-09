@@ -9,6 +9,8 @@
 <html>
 <body>
 <h1>Pythagorean Theorem Calculator</h1>
+<p>a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></p></p>
+
 <select id="side1" onchange = "setSide1(this.value)">
     <option value = "a"> a </option>
     <option value = "b"> b </option>
@@ -21,7 +23,7 @@
     <option value = "c"> c </option>
 </select>
 <input type = "text" id = "length2" name = "length2" required maxlength = "20" size = "10"><br>
-<input type= "text" id="output" readonly size = "50">
+<input type= "text" id="output" readonly size = "52">
 <button type = "button" onclick = "Pythagorean(document.getElementById('length1').value, document.getElementById('length2').value);">Calculate</button>
 
 

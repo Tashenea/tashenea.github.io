@@ -37,13 +37,26 @@ function PythagoreanLC(l, c) {
 
 // Find the length of one side of a right triangle given the other two side lengths
 function Pythagorean(length1, length2) {
-    if(side1 == side2) {
-        return "Invalid input: the two sides should not be the same side (Both are '" + side1 + "')";
-    } else if (side1 == "c") {
-        document.getElementById("output").value = PythagoreanLC(length2, length1);
-    }else if (side2 == "c") {
-        document.getElementById("output").value = PythagoreanLC(length1, length2);
+    if(length1.match(/^-?\d*\.?\d+$/) && length2.match(/^-?\d*\.?\d+$/)) { // validate input
+        let side3 = "";
+        if(side1 != "a" && side2 != "a") {
+            side3 = "a";
+        } else if(side1 != "b" && side2 != "b") {
+            side3 = "b";
+        } else {
+            side3 = "c";
+        }
+        // use appropriate function depending on the two sides
+        if(side1 == side2) {
+            document.getElementById("output").value = "Invalid input: the two sides should not be the same (Both are '" + side1 + "')";
+        } else if(side1 == "c") {
+            document.getElementById("output").value = side3 + " = " + PythagoreanLC(length2, length1);
+        }else if(side2 == "c") {
+            document.getElementById("output").value = side3 + " = " + PythagoreanLC(length1, length2);
+        } else {
+            document.getElementById("output").value = side3 + " = " + PythagoreanAB(length1, length2);
+        }
     } else {
-        document.getElementById("output").value = PythagoreanAB(length1, length2);
+        document.getElementById("output").value = "Invalid input: Should only contain digits (0-9), and one or zero '.'";
     }
 }
