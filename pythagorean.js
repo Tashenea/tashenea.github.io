@@ -6,6 +6,16 @@
  */
 
 // Finds the hypotenuse c given the two legs a and b
+let side1 = "a";
+let side2 = "a";
+
+function setSide1(side) {
+    side1 = side;
+}
+
+function setSide2(side) {
+    side2 = side;
+}
 function PythagoreanAB(a, b) {
     if(a <= 0 || b <= 0) {
         return "Invalid input: all inputs must be greater than 0"
@@ -26,22 +36,14 @@ function PythagoreanLC(l, c) {
 }
 
 // Find the length of one side of a right triangle given the other two side lengths
-function Pythagorean(side1, side2, length1, length2) {
+function Pythagorean(length1, length2) {
     if(side1 == side2) {
         return "Invalid input: the two sides should not be the same side (Both are '" + side1 + "')";
     } else if (side1 == "c") {
-        return PythagoreanLC(length2, length1);
+        document.getElementById("output").value = PythagoreanLC(length2, length1);
     }else if (side2 == "c") {
-        return PythagoreanLC(length1, length2);
+        document.getElementById("output").value = PythagoreanLC(length1, length2);
     } else {
-        return PythagoreanAB(length1, length2);
+        document.getElementById("output").value = PythagoreanAB(length1, length2);
     }
 }
-// Tests
-console.log(Pythagorean("c", "a", 5, 3)); // Expect 4
-console.log(Pythagorean("a", "b", 3, 4)); // Expect 5
-console.log(Pythagorean("b", "c", 4, 5)); // Expect 3
-console.log(Pythagorean("c", "a", 4, 5)); // Expect input to be invalid (a > c)
-console.log(Pythagorean("a", "b", 5, -5)); // Expect input to be invalid (contains nonpositive value)
-console.log(Pythagorean("b", "c", 5, 0)); // Expect input to be invalid (contains nonpositive value)
-console.log(Pythagorean("a", "a", 5, 10)); // Expect input to be invalid (both sides are "a")
